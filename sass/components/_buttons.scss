@@ -1,0 +1,18 @@
+%button {
+  color: $primary-bg;
+  background-color: $accent;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 250ms $cubic;
+}
