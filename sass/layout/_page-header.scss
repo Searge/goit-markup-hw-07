@@ -1,0 +1,19 @@
+.page-header {
+  color: get-color('logo');
+  border-bottom: 1px solid get-color('border');
+}
+
+.page-header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation .logo__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
