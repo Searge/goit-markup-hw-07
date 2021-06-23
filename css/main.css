@@ -208,12 +208,12 @@ body {
   padding-right: 15px;
 }
 
-.page-header {
+.header {
   color: #000;
   border-bottom: 1px solid #ececec;
 }
 
-.page-header > .container {
+.header > .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +620,7 @@ body {
 }
 
 /* Contacts Header */
-.page-header .contacts {
+.header .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
