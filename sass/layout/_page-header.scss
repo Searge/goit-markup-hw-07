@@ -1,9 +1,9 @@
-.page-header {
+.header {
   color: get-color('ternary-text');
   border-bottom: 1px solid get-color('border');
 }
 
-.page-header > .container {
+.header > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
