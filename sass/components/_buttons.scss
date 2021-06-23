@@ -1,6 +1,6 @@
 %button {
-  color: $primary-bg;
-  background-color: $accent;
+  color: get-color-inverted('primary-text');
+  background-color: get-color('accent');
   border-radius: 4px;
   border: none;
   display: inline-block;

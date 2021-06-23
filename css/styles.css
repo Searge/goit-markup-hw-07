@@ -104,8 +104,8 @@ _  _ ____ ____ ___  ____ ____
 
 */
 .page-header {
-  color: var(--logo-color);
-  border-bottom: 1px solid var(--border-color);
+  color: get-color('logo');
+  border-bottom: 1px solid get-color('border');
 }
 
 .page-header > .container {
