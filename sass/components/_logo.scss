@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__accent {
+    color: get-color('accent');
+  }
+}
