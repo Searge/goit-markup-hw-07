@@ -686,7 +686,7 @@ body {
 
 .button:hover,
 .button:focus {
-  background-color: var(--accent-hover);
+  background-color: #188ce8;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -824,7 +824,7 @@ body {
 .cross-icon {
   width: 11px;
   height: 11px;
-  fill: var(--logo-color);
+  fill: #000;
 }
 
 .button-close:hover > .cross-icon,
