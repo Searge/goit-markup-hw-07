@@ -1,0 +1,21 @@
+.join__social {
+  display: flex;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join.social__link {
+  background: $social-bg;
+  color: get-color-inverted('primary-text');
+}

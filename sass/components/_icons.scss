@@ -1,0 +1,51 @@
+.icon__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: get-color('secondary-bg');
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: get-color('ternary-buttons');
+  transition: background-color 250ms $cubic, color 250ms $cubic;
+}
+.social__link:hover,
+.social__link:focus {
+  color: get-color('primary-bg');
+  background-color: get-color('accent');
+}
+
+.social-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.partner-icon {
+  fill: currentColor;
+  height: 50px;
+}

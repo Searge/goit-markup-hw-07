@@ -1,0 +1,33 @@
+.partners {
+  text-align: center;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.partners__items:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Partners links & icons */
+.partners__link {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid get-color('ternary-buttons');
+  color: get-color('ternary-buttons');
+  transition: color 250ms $cubic, border-color 250ms $cubic;
+  margin: 0;
+}
+
+.partners__link:hover,
+.partners__link:focus {
+  color: get-color('accent');
+  border-color: get-color('accent');
+}

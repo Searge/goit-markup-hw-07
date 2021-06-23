@@ -1,0 +1,28 @@
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: get-color('secondary-text');
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: get-color('secondary-text');
+}
+
+.features.list {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__item + .features__item {
+  margin-left: 30px;
+}
+
+.features p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

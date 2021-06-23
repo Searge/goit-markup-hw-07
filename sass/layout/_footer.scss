@@ -1,0 +1,48 @@
+.footer {
+  background-color: get-color('ternary-bg');
+  color: get-color-inverted('primary-text');
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer.container {
+  display: flex;
+}
+
+.footer__item > .logo {
+  margin-bottom: 20px;
+}
+
+.footer.contacts {
+  width: 231px;
+}
+
+.footer.contacts__link {
+  color: $footer-links-color;
+  transition: color 250ms $cubic;
+  font-weight: 400;
+}
+
+.footer.contacts__link:hover,
+.footer.contacts__link:focus {
+  color: get-color('accent');
+}
+
+.footer.contacts__item {
+  margin-top: 9px;
+}
+
+/* Wierd Margins */
+.footer__item.address {
+  margin-right: 70px;
+}
+
+.footer__item.join {
+  margin-right: 93px;
+}
