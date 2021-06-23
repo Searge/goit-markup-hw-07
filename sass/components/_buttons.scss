@@ -38,7 +38,7 @@
 
 .button:hover,
 .button:focus {
-  background-color: var(--accent-hover);
+  background-color: get-color('accent-hover');
   box-shadow: 0 4px 4px $shadow-button;
 }
 

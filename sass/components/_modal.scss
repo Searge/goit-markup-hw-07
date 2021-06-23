@@ -55,7 +55,7 @@
 .cross-icon {
   width: 11px;
   height: 11px;
-  fill: var(--logo-color);
+  fill: get-color('ternary-text');
 }
 
 .button-close:hover > .cross-icon,
