@@ -37,10 +37,7 @@ $backdrop-bg: get-color-alpha('logo', 'dark');
 // $modal-form-border: rgba(33, 33, 33, 0.2);
 $modal-form-border: get-color-alpha('secondary-text', 'dark');
 // $footer-links-color: rgba(255, 255, 255, 0.6);
-$footer-links-color: get-color-alpha(
-  get-color-inverted('primary-text'),
-  'medium'
-);
+$footer-links-color: get-color-alpha('primary-bg', 'medium');
 // $dev-bg: rgba(47, 48, 58, 0.8);
 $dev-bg: get-color-alpha('ternary-bg', 'light');
 // $project-accent: rgba(33, 150, 243, 0.9);
