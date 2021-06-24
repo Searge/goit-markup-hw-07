@@ -39,11 +39,11 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header__contacts">
+      <div class="header__container container">
         <!-- Logo -->
         <nav class="navigation">
           <a href="./" class="logo"
-            ><span class="logo__accent">Web</span>Studio</a
+            ><span class="logo--accent">Web</span>Studio</a
           >
 
           <!-- Menu -->
@@ -64,7 +64,7 @@
 
         <!-- Contacts -->
         <ul class="contacts list">
-          <li class="header__contacts contacts__item">
+          <li class="contacts__item">
             <a class="contacts__link" href="mailto://info@example.com">
               <svg class="contacts__icon">
                 <use href="./images/icons/sprites.svg#envelope"></use>
@@ -72,7 +72,7 @@
               info@example.com</a
             >
           </li>
-          <li class="header__contacts contacts__item">
+          <li class="contacts__item">
             <a class="contacts__link" href="tel://+380991111111">
               <svg class="contacts__icon">
                 <use href="./images/icons/sprites.svg#smartphone"></use>
@@ -94,7 +94,10 @@
           <!-- Filter -->
           <ul class="filter list">
             <li class="filter__item">
-              <button type="button" class="filter__btn active button">
+              <button
+                class="filter__btn filter__btn--active button"
+                type="button"
+              >
                 Все
               </button>
             </li>
@@ -309,57 +312,56 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer container">
-        <div class="footer__item address">
+      <div class="footer__container container">
+        <!-- Address -->
+        <div class="address">
           <a href="" class="logo"
-            ><span class="logo__accent">Web</span>Studio</a
+            ><span class="logo--accent">Web</span>Studio</a
           >
 
-          <address class="footer contacts">
+          <address class="contacts">
             г. Киев, пр-т Леси Украинки, 26
-            <ul class="footer contacts list">
-              <li class="footer contacts__item">
-                <a
-                  class="footer contacts__link"
-                  href="mailto://info@example.com"
+            <ul class="list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto://info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer contacts__item">
-                <a class="footer contacts__link" href="tel://+380991111111"
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel://+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-
-        <div class="footer__item join">
+        <!-- Join -->
+        <div class="join">
           <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="join__social list">
             <li class="join__item">
-              <a class="join social__link" href="">
+              <a class="join__link social__link" href="">
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join social__link" href="">
+              <a class="join__link social__link" href="">
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join social__link" href="">
+              <a class="join__link social__link" href="">
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join social__link" href="">
+              <a class="join__link social__link" href="">
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#linkedin"></use>
                 </svg>
@@ -367,20 +369,21 @@
             </li>
           </ul>
         </div>
-
-        <div class="footer__item spam">
+        <!-- SPAM -->
+        <div class="spam">
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
+          <!-- Form Subscribe -->
           <form class="form-subscribe" name="form-subscribe">
             <input
-              class="input-mail"
+              class="form-subscribe__input"
               type="mail"
               name="mail"
               placeholder="Email"
             />
-            <button class="button-mail button" type="submit">
+            <button class="form-subscribe__button button" type="submit">
               Подписаться
 
-              <svg class="icon-send">
+              <svg class="form-subscribe__icon">
                 <use href="./images/icons/sprites.svg#send"></use>
               </svg>
             </button>
