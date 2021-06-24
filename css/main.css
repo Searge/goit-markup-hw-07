@@ -880,7 +880,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  /* Checkbox */
 }
 
 .order-form__label {
