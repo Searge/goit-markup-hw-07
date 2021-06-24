@@ -9,6 +9,6 @@ refs.openModalBtn.addEventListener('click', tongleModal);
 refs.closeModalBtn.addEventListener('click', tongleModal);
 
 function tongleModal() {
-  refs.backdrop.classList.toggle('is-hidden');
-  refs.modal.classList.toggle('active');
+  refs.backdrop.classList.toggle('backdrop--is-hidden');
+  refs.modal.classList.toggle('modal--active');
 }
