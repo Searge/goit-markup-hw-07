@@ -488,6 +488,26 @@ body {
   margin-right: 8px;
 }
 
+.filter__btn {
+  min-width: 73px;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__btn--active, .filter__btn:hover, .filter__btn:focus {
+  background-color: #2196f3;
+  color: #fff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .thumb {
   position: relative;
   overflow: hidden;
@@ -692,13 +712,13 @@ body {
 }
 
 .button {
-  color: #fff;
-  background-color: #2196f3;
-  border-radius: 4px;
-  border: none;
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
+  border-radius: 4px;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -712,77 +732,10 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.form-subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.input-mail {
-  width: 358px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.input-mail:focus {
-  color: #fff;
-}
-
-.button-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 29px;
-}
-
-.icon-send {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: #fff;
-}
-
-.filter__btn {
-  min-width: 73px;
-  padding: 6px 22px;
-  background-color: #f5f4fa;
-  color: #212121;
-  font-size: 16px;
-  line-height: 1.62;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 0.03em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter__btn.active,
-.filter__btn:hover,
-.filter__btn:focus {
-  background-color: #2196f3;
-  color: #fff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .backdrop {
@@ -869,6 +822,49 @@ body {
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+
+.form-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-subscribe__input {
+  width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.form-subscribe__input:focus {
+  color: #fff;
+}
+
+.form-subscribe__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 29px;
+}
+
+.form-subscribe__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #fff;
 }
 
 .order-form {
