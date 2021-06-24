@@ -4,7 +4,7 @@
   min-width: 200px;
   border-radius: 4px;
   border: none;
-  
+
   background-color: get-color('accent');
   color: get-color-inverted('primary-text');
 
@@ -15,7 +15,8 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   cursor: pointer;
-  transition: box-shadow 250ms $cubic;
+  // transition: box-shadow 250ms $cubic;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -23,5 +24,3 @@
     box-shadow: 0 4px 4px $shadow-button;
   }
 }
-
-

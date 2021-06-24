@@ -18,8 +18,10 @@
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    
-    transition: color 250ms $cubic, background-color 250ms $cubic;
+
+    // transition: color 250ms $cubic, background-color 250ms $cubic;
+    @include transition(background-color);
+    @include transition(color);
   }
 
   &__btn--active,

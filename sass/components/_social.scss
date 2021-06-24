@@ -14,8 +14,11 @@
     height: 44px;
     border-radius: 50%;
     color: get-color('ternary-buttons');
-    transition: background-color 250ms $cubic, color 250ms $cubic;
+    // transition: background-color 250ms $cubic, color 250ms $cubic;
+    @include transition(background-color);
+    @include transition(color);
   }
+
   &__link:hover,
   &__link:focus {
     color: get-color-inverted('primary-text');

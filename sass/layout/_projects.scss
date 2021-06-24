@@ -54,7 +54,9 @@
     transform: translateY(100%);
     opacity: 1;
 
-    transition: transform 250ms $cubic, opacity 250ms $cubic;
+    // transition: transform 250ms $cubic, opacity 250ms $cubic;
+    @include transition(transform);
+    @include transition(opacity);
 
     color: get-color-inverted('primary-text');
     font-size: 18px;
@@ -62,7 +64,9 @@
   }
 
   &__item:hover {
-    transition: box-shadow 250ms $cubic;
+    // transition: box-shadow 250ms $cubic;
+    @include transition(box-shadow);
+
     box-shadow: 0px 1px 1px $shadow-12, 0px 4px 4px $shadow-06,
       1px 4px 6px $shadow-16;
   }

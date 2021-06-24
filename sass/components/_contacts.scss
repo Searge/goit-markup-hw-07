@@ -7,7 +7,8 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: get-color('primary-text');
-    transition: color 250ms $cubic;
+    // transition: color 250ms $cubic;
+    @include transition(color);
   }
 
   &__link:hover,

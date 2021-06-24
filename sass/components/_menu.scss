@@ -13,7 +13,8 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: get-color('secondary-text');
-    transition: color 250ms $cubic;
+    // transition: color 250ms $cubic;
+    @include transition(color);
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
@@ -39,9 +40,8 @@
 
     content: '';
     background-color: get-color('accent');
-    transition: opacity 250ms $cubic;
+    // transition: opacity 250ms $cubic;
+    @include transition(opacity);
     opacity: 1;
   }
-
 }
-
