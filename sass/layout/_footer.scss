@@ -11,32 +11,12 @@
   padding-bottom: 60px;
 }
 
-.footer.container {
+.footer__container {
   display: flex;
 }
 
-.footer__item > .logo {
-  margin-bottom: 20px;
-}
 
-.footer.contacts {
-  width: 231px;
-}
 
-.footer.contacts__link {
-  color: $footer-links-color;
-  transition: color 250ms $cubic;
-  font-weight: 400;
-}
-
-.footer.contacts__link:hover,
-.footer.contacts__link:focus {
-  color: get-color('accent');
-}
-
-.footer.contacts__item {
-  margin-top: 9px;
-}
 
 /* Wierd Margins */
 .footer__item.address {

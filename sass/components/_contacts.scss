@@ -1,5 +1,19 @@
 .contacts {
   font-style: normal;
+
+  &__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: get-color('primary-text');
+    transition: color 250ms $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: get-color('accent');
+  }
 }
 
 /* Contacts Header */
@@ -25,16 +39,21 @@
   height: 16px;
 }
 
-.contacts__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: get-color('primary-text');
-  transition: color 250ms $cubic;
+.footer.contacts {
+  width: 231px;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.footer.contacts__link {
+  color: $footer-links-color;
+  transition: color 250ms $cubic;
+  font-weight: 400;
+}
+
+.footer.contacts__link:hover,
+.footer.contacts__link:focus {
   color: get-color('accent');
+}
+
+.footer.contacts__item {
+  margin-top: 9px;
 }
