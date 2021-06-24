@@ -387,11 +387,11 @@ body {
   color: #fff;
 }
 
-.section.team {
+.team {
   background-color: #f5f4fa;
 }
 
-.team.list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +420,7 @@ body {
   font-weight: 500;
 }
 
-.team__item p {
+.team__position {
   margin-top: 10px;
   margin-bottom: 16px;
 }
@@ -796,7 +796,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -821,13 +821,13 @@ body {
   border-radius: 4px;
 }
 
-.modal.active {
+.modal--active {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-.button-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -849,14 +849,14 @@ body {
   background-color: transparent;
 }
 
-.cross-icon {
+.modal__icon {
   width: 11px;
   height: 11px;
   fill: #000;
 }
 
-.button-close:hover > .cross-icon,
-.button-close:focus > .cross-icon {
+.modal__close:hover > .modal__icon,
+.modal__close:focus > .modal__icon {
   fill: #2196f3;
 }
 
@@ -882,7 +882,7 @@ body {
   text-align: left;
 }
 
-.order-form__item {
+.order-form__label {
   margin-bottom: 10px;
 }
 
@@ -890,14 +890,14 @@ body {
   margin-bottom: 20px;
 }
 
-.order-form__title-item {
+.order-form__title {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
 
-.order-form__conteiner {
+.order-form__box {
   position: relative;
 }
 
