@@ -578,7 +578,6 @@ body {
   margin-right: 50px;
 }
 
-/* Site nav */
 .menu__link {
   position: relative;
   display: block;
@@ -593,14 +592,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.current,
-.menu__link:hover,
-.menu__link:focus {
+.menu__link--current, .menu__link:hover, .menu__link:focus {
   color: #2196f3;
 }
 
-/* Blue bar */
-.menu__link.current::after {
+.menu__link--current::after {
   position: absolute;
   left: 0;
   bottom: 0;
