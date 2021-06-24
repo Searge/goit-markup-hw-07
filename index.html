@@ -96,9 +96,9 @@
 
         <div class="backdrop backdrop--is-hidden" data-backdrop>
           <div class="modal" data-modal>
-            <button class="button-close" type="button" data-close-modal>
+            <button class="modal__close" type="button" data-close-modal>
               <!-- Close -->
-              <svg class="cross-icon">
+              <svg class="modal__icon">
                 <use href="./images/icons/sprites.svg#cross"></use>
               </svg>
             </button>
@@ -108,10 +108,10 @@
 
             <!-- Form -->
             <form class="order-form">
-              <label class="order-form__item">
-                <p class="order-form__title-item">Имя</p>
+              <label class="order-form__label">
+                <p class="order-form__title">Имя</p>
 
-                <div class="order-form__conteiner">
+                <div class="order-form__box">
                   <input
                     type="text"
                     name="name"
@@ -124,10 +124,10 @@
                   </svg>
                 </div>
               </label>
-              <label class="order-form__item">
-                <p class="order-form__title-item">Телефон</p>
+              <label class="order-form__label">
+                <p class="order-form__title">Телефон</p>
 
-                <div class="order-form__conteiner">
+                <div class="order-form__box">
                   <input type="tel" name="phone" class="order-form__input" />
                   <!-- Input Icon -->
                   <svg class="input-icon">
@@ -135,10 +135,10 @@
                   </svg>
                 </div>
               </label>
-              <label class="order-form__item">
-                <p class="order-form__title-item">Почта</p>
+              <label class="order-form__label">
+                <p class="order-form__title">Почта</p>
 
-                <div class="order-form__conteiner">
+                <div class="order-form__box">
                   <input type="email" name="email" class="order-form__input" />
                   <!-- Input Icon -->
                   <svg class="input-icon">
@@ -147,7 +147,7 @@
                 </div>
               </label>
               <label class="order-form__textarea">
-                <p class="order-form__title-item">Комментарий</p>
+                <p class="order-form__title">Комментарий</p>
 
                 <textarea
                   name="comment"
@@ -286,7 +286,7 @@
             <li class="team__item">
               <img src="./images/team/igor.jpg" alt="Игорь" width="270" />
               <h3 class="team__title">Игорь Демьяненко</h3>
-              <p class="team__about">Product Designer</p>
+              <p class="team__position">Product Designer</p>
               <ul class="social list">
                 <li class="social__item">
                   <a class="social__link" href="">
@@ -321,7 +321,7 @@
             <li class="team__item">
               <img src="./images/team/olga.jpg" alt="Ольга" width="270" />
               <h3 class="team__title">Ольга Репина</h3>
-              <p class="team__about">Frontend developmenteloper</p>
+              <p class="team__position">Frontend developmenteloper</p>
               <ul class="social list">
                 <li class="social__item">
                   <a class="social__link" href="">
@@ -356,7 +356,7 @@
             <li class="team__item">
               <img src="./images/team/nikola.jpg" alt="Николай" width="270" />
               <h3 class="team__title">Николай Тарасов</h3>
-              <p class="team__about">Marketing</p>
+              <p class="team__position">Marketing</p>
               <ul class="social list">
                 <li class="social__item">
                   <a class="social__link" href="">
@@ -391,7 +391,7 @@
             <li class="team__item">
               <img src="./images/team/mike.jpg" alt="Михаил" width="270" />
               <h3 class="team__title">Михаил Ермаков</h3>
-              <p class="team__about">UI Designer</p>
+              <p class="team__position">UI Designer</p>
               <ul class="social list">
                 <li class="social__item">
                   <a class="social__link" href="">
