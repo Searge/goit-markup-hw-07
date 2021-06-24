@@ -1,28 +1,28 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: get-color('ternary-bg');
   color: get-color-inverted('primary-text');
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 
-.footer-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer__container {
-  display: flex;
-}
-
-
-
-
-/* Wierd Margins */
-.footer__item.address {
+.address {
+  width: 231px;
   margin-right: 70px;
-}
-
-.footer__item.join {
-  margin-right: 93px;
 }
