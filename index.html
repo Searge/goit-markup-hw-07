@@ -113,13 +113,13 @@
 
                 <div class="order-form__box">
                   <input
+                    class="order-form__input"
                     type="text"
                     name="name"
-                    class="order-form__input"
                     autofocus
                   />
                   <!-- Input Icon -->
-                  <svg class="input-icon">
+                  <svg class="order-form__input-icon">
                     <use href="./images/icons/sprites.svg#person"></use>
                   </svg>
                 </div>
@@ -128,9 +128,9 @@
                 <p class="order-form__title">Телефон</p>
 
                 <div class="order-form__box">
-                  <input type="tel" name="phone" class="order-form__input" />
+                  <input class="order-form__input" type="tel" name="phone" />
                   <!-- Input Icon -->
-                  <svg class="input-icon">
+                  <svg class="order-form__input-icon">
                     <use href="./images/icons/sprites.svg#phone"></use>
                   </svg>
                 </div>
@@ -139,9 +139,9 @@
                 <p class="order-form__title">Почта</p>
 
                 <div class="order-form__box">
-                  <input type="email" name="email" class="order-form__input" />
+                  <input class="order-form__input" type="email" name="email" />
                   <!-- Input Icon -->
-                  <svg class="input-icon">
+                  <svg class="order-form__input-icon">
                     <use href="./images/icons/sprites.svg#email"></use>
                   </svg>
                 </div>
@@ -150,8 +150,8 @@
                 <p class="order-form__title">Комментарий</p>
 
                 <textarea
-                  name="comment"
                   class="order-form__comment"
+                  name="comment"
                   rows="8"
                   placeholder="Введите текст"
                 ></textarea>
@@ -164,10 +164,10 @@
                   type="checkbox"
                   name="policy"
                 />
-                <span class="policy-icon"></span>
-                <p class="policy-text">
+                <span class="order-form__checkbox-icon"></span>
+                <p class="order-form__text">
                   Соглашаюсь с рассылкой и принимаю
-                  <a href="">Условия договора</a>
+                  <a class="order-form__link" href="">Условия договора</a>
                 </p>
               </label>
               <button type="submit" class="button">Отправить</button>

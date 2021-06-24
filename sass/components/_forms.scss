@@ -3,114 +3,114 @@
   flex-direction: column;
 
   text-align: left;
-}
 
-.order-form__label {
-  margin-bottom: 10px;
-}
+  &__label {
+    margin-bottom: 10px;
+  }
 
-.order-form__textarea {
-  margin-bottom: 20px;
-}
+  &__textarea {
+    margin-bottom: 20px;
+  }
 
-.order-form__title {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-}
+  &__title {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
 
-.order-form__box {
-  position: relative;
-}
+  &__box {
+    position: relative;
+  }
 
-.order-form__input {
-  width: 100%;
-  padding: 11px 12px;
-  padding-left: 42px;
-  border: 1px solid $modal-form-border;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+  &__input {
+    width: 100%;
+    padding: 11px 12px;
+    padding-left: 42px;
+    border: 1px solid $modal-form-border;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 
-.order-form .button {
-  width: 200px;
-  align-self: center;
-  box-shadow: 0px 4px 4px $shadow-button;
-}
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
 
-.input-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: get-color('secondary-text');
+  }
 
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  fill: get-color('secondary-text');
-}
+  &__comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
 
-.order-form__comment {
-  width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
+    border: 1px solid $modal-form-border;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 
-  border: 1px solid $modal-form-border;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+  &__comment::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
 
-.order-form__comment::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+    color: $comment-placeholder;
+  }
 
-  color: $comment-placeholder;
-}
+  &__comment:focus,
+  &__input:focus,
+  &__input:focus + .input-icon {
+    fill: get-color('accent');
+    border-color: get-color('accent');
+  }
 
-.order-form__comment:focus,
-.order-form__input:focus,
-.order-form__input:focus + .input-icon {
-  fill: get-color('accent');
-  border-color: get-color('accent');
-}
+  &__policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    line-height: 1.71;
+  }
 
-.order-form__policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  line-height: 1.71;
-}
+  /* Checkbox */
+  &__checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 
-/* Checkbox */
-.order-form__checkbox {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+  &__checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid get-color('secondary-text');
+    border-radius: 2px;
+  }
 
-.policy-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid get-color('secondary-text');
-  border-radius: 2px;
-}
+  &__checkbox:focus + &__checkbox-icon,
+  &__checkbox:checked + &__checkbox-icon {
+    border-color: transparent;
+    background-color: get-color('accent');
+    background-image: url('../images/icons/check.svg');
+    background-origin: border-box;
+    background-size: contain;
+  }
 
-.order-form__checkbox:focus + .policy-icon,
-.order-form__checkbox:checked + .policy-icon {
-  border-color: transparent;
-  background-color: get-color('accent');
-  background-image: url('../images/icons/check.svg');
-  background-origin: border-box;
-  background-size: contain;
-}
+  &__link {
+    color: get-color('accent');
+  }
 
-.policy-text a {
-  color: get-color('accent');
+  & .button {
+    width: 200px;
+    align-self: center;
+    box-shadow: 0px 4px 4px $shadow-button;
+  }
 }
