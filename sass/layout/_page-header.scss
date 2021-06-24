@@ -1,15 +1,14 @@
 .header {
   color: get-color('ternary-text');
   border-bottom: 1px solid get-color('border');
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .navigation {
   display: flex;
 }
-
