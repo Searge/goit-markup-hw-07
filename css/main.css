@@ -208,12 +208,12 @@ body {
   padding-right: 15px;
 }
 
-.page-header {
+.header {
   color: #000;
   border-bottom: 1px solid #ececec;
 }
 
-.page-header > .container {
+.header > .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +231,7 @@ body {
   display: flex;
 }
 
-.navigation .logo__link {
+.navigation .logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -541,7 +541,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project__descriptioon {
+.project__description {
   margin-top: 4px;
   margin-bottom: 0;
   font-size: 16px;
@@ -558,7 +558,7 @@ body {
   line-height: 1.2;
 }
 
-.logo__link {
+.logo {
   text-decoration: none;
   color: inherit;
 }
@@ -620,7 +620,7 @@ body {
 }
 
 /* Contacts Header */
-.page-header .contacts {
+.header .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
