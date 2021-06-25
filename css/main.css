@@ -1015,6 +1015,7 @@ body {
 
 .project__link {
   text-decoration: none;
+  color: inherit;
 }
 
 .project__container {
